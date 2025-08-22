@@ -1,0 +1,5 @@
+[client]
+database = ,srmcem.it.214
+user = divam62
+password = divam0987
+default-character-set = utf8mb4

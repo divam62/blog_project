@@ -73,12 +73,20 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+MYSQL_CNF = "C:\\Users\\divam\\OneDrive\\Documents\\srmcem.IT.214\\myblog\\blog\\creds\\mysql_creds.cnf"
+MANAGE_FILE = "C:\\Users\\divam\\OneDrive\\Documents\\srmcem.IT.214\\myblog\\manage.py"
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myblogdb',       # <-- your DB name
+        'USER': 'divam62',        # <-- same as MySQL user
+        'PASSWORD': 'divam0987',   # <-- must match MySQL
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
